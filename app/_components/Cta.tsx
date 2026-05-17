@@ -25,7 +25,7 @@ export function Cta() {
         <h2 className="cta-title">Tecnologia que transforma!</h2>
         <p className="cta-text">
           Em uma conversa inicial, entendemos seus desafios e avaliamos quais
-          soluções fazem mais sentido para o seu momento.
+          soluções fazem mais sentido para o seu negócio.
         </p>
         <a href="#contato" className="hero-button cta-button">
           <span>Marcar Reunião</span>
