@@ -1086,7 +1086,7 @@ a {
 
   .solutions-section {
     --section-gutter: 24px;
-    padding: 104px 0 108px;
+    padding: 84px 0 88px;
   }
 
   .solutions-header {
@@ -1151,7 +1151,7 @@ a {
   }
 
   .roadmap-section {
-    padding: 104px 0 112px;
+    padding: 84px 0 88px;
   }
 
   .roadmap-heading,
@@ -1195,6 +1195,21 @@ a {
 
   .roadmap-step-button {
     min-height: 58px;
+    grid-template-columns: 22px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .roadmap-step-icon {
+    padding-top: 28px;
+  }
+
+  .roadmap-step-icon.is-active {
+    padding-top: 35px;
+  }
+
+  .roadmap-step-icon svg {
+    width: 18px;
+    height: 18px;
   }
 
   .roadmap-step-description {
@@ -1202,7 +1217,7 @@ a {
   }
 
   .faq-section {
-    padding: 104px 0 112px;
+    padding: 84px 0 88px;
   }
 
   .faq-heading,
@@ -1223,16 +1238,12 @@ a {
     padding: 0 22px 20px;
   }
 
+  .cta-section {
+    padding: 90px 24px 108px;
+  }
+
   .cta-bracket {
-    height: clamp(180px, 30vw, 240px);
-  }
-
-  .cta-bracket-left {
-    left: clamp(24px, 6vw, 64px);
-  }
-
-  .cta-bracket-right {
-    right: clamp(24px, 6vw, 64px);
+    display: none;
   }
 
   .cta-title {
@@ -1306,7 +1317,7 @@ a {
 
   .solutions-section {
     --section-gutter: 18px;
-    padding: 86px 0 92px;
+    padding: 68px 0 72px;
   }
 
   .solutions-header {
@@ -1379,7 +1390,7 @@ a {
   }
 
   .roadmap-section {
-    padding: 86px 0 92px;
+    padding: 68px 0 72px;
   }
 
   .roadmap-splash-illustration {
@@ -1428,22 +1439,35 @@ a {
   }
 
   .roadmap-step-button {
-    min-height: 54px;
-    grid-template-columns: 24px minmax(0, 1fr);
-    gap: 12px;
+    min-height: 50px;
+    grid-template-columns: 18px minmax(0, 1fr);
+    gap: 10px;
     font-size: 14px;
   }
 
+  .roadmap-step-icon {
+    padding-top: 19px;
+  }
+
+  .roadmap-step-icon.is-active {
+    padding-top: 23px;
+  }
+
+  .roadmap-step-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+
   .roadmap-step-copy {
-    padding-top: 18px;
+    padding-top: 16px;
   }
 
   .roadmap-step-title {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .roadmap-step-button.is-active .roadmap-step-title {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .roadmap-step-description {
@@ -1453,7 +1477,7 @@ a {
   }
 
   .faq-section {
-    padding: 86px 0 92px;
+    padding: 68px 0 72px;
   }
 
   .faq-heading,
@@ -1477,17 +1501,8 @@ a {
     font-size: 12.5px;
   }
 
-  .cta-bracket {
-    height: clamp(140px, 38vw, 200px);
-    opacity: 0.7;
-  }
-
-  .cta-bracket-left {
-    left: 12px;
-  }
-
-  .cta-bracket-right {
-    right: 12px;
+  .cta-section {
+    padding: 72px 18px 78px;
   }
 
   .cta-title {

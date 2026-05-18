@@ -8,6 +8,8 @@ function ArrowIcon() {
   );
 }
 
+const meetingUrl = "https://meetings.hubspot.com/quero-code";
+
 export function Cta() {
   return (
     <section className="cta-section" id="contato">
@@ -27,7 +29,12 @@ export function Cta() {
           Em uma conversa inicial, entendemos seus desafios e avaliamos quais
           soluções fazem mais sentido para o seu negócio.
         </p>
-        <a href="#contato" className="hero-button cta-button">
+        <a
+          href={meetingUrl}
+          className="hero-button cta-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <span>Marcar Reunião</span>
           <ArrowIcon />
         </a>

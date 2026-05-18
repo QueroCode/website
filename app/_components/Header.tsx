@@ -11,6 +11,8 @@ const navItems = [
   { label: "Contato", id: "contato" },
 ];
 
+const meetingUrl = "https://meetings.hubspot.com/quero-code";
+
 function ArrowIcon() {
   return (
     <svg viewBox="0 0 16 16" aria-hidden="true">
@@ -81,7 +83,12 @@ export function Header() {
         ))}
       </nav>
 
-      <a href="#contato" className="hero-button hero-button-top">
+      <a
+        href={meetingUrl}
+        className="hero-button hero-button-top"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <span>Marcar Reunião</span>
         <ArrowIcon />
       </a>

@@ -112,7 +112,7 @@ export function Roadmap() {
       <div className="roadmap-heading">
         <p className="roadmap-eyebrow">
           <span aria-hidden="true" />
-          ROADMAP RÁPIDO
+          ROADMAP
         </p>
         <h2>
           Entram problemas,

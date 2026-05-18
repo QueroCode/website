@@ -12,44 +12,70 @@ type FaqItem = {
 
 const faqItems: FaqItem[] = [
   {
-    question: "What do I need to start?",
+    question: "O que a QueroCode faz?",
     answer:
-      "Tell us about your problem and goals. We'll align on scope, timeline and the right team to move forward in days, not weeks.",
+      "A QueroCode cria soluções sob medida em software, IA, automação, dados, BI e produto digital para empresas que precisam transformar desafios de negócio em soluções práticas e escaláveis.",
   },
   {
-    question: "What is the minimum amount to withdraw?",
+    question: "A QueroCode é uma software house?",
     answer:
-      "There is no minimum amount to withdraw. You have no limitations on how much you want to buy or sell inside the platform. You have no limitations on how much you want to buy or sell inside the platform.",
+      "Sim. Somos uma software house formada por engenheiros da Poli-USP, com foco em desenvolver soluções digitais sob medida para empresas que precisam de profundidade técnica, velocidade e visão de negócio.",
   },
   {
-    question: "How can I open my account?",
+    question: "Que tipo de solução vocês desenvolvem?",
     answer:
-      "Reach out through the contact button and we'll set everything up with you in a quick onboarding call.",
+      "Atuamos em diferentes frentes, como sistemas internos, plataformas web, APIs, integrações, automações com IA, agentes inteligentes, dashboards, relatórios automatizados, MVPs, protótipos e experiências digitais.",
   },
   {
-    question: "What is the value of the KX token?",
+    question: "Vocês trabalham com inteligência artificial?",
     answer:
-      "Pricing depends on scope and engagement model. Share your context and we'll send a tailored proposal.",
+      "Sim. Ajudamos empresas a identificar e implementar aplicações reais de IA na operação, como automação de processos, agentes internos, chatbots, OCR, relatórios automáticos e fluxos inteligentes de apoio à decisão.",
   },
   {
-    question: "What payment methods are accepted on the platform?",
+    question: "Vocês trabalham com empresas de quais segmentos?",
     answer:
-      "We accept bank transfer, PIX and major credit cards. Invoicing is issued for every contract.",
+      "Atendemos empresas de diferentes segmentos que tenham desafios ligados a operação, processos, dados, tecnologia, automação, produto digital ou crescimento. Nosso modelo é sob medida, então começamos entendendo o contexto de cada negócio.",
   },
   {
-    question: "What is the minimum amount to withdraw?",
+    question: "Como funciona o processo de trabalho?",
     answer:
-      "There is no minimum. You decide the cadence and volume that fits your operation.",
+      "Nosso processo começa por um diagnóstico inicial da operação e dos principais gargalos. Depois, priorizamos as oportunidades com maior impacto, montamos o time ideal, executamos em ciclos curtos e evoluímos a solução com base no uso real.",
   },
   {
-    question: "What do I need to start?",
+    question:
+      "A QueroCode faz apenas projetos fechados ou também parcerias contínuas?",
     answer:
-      "A clear problem to solve. We handle the rest — diagnosis, prioritization, development and rollout.",
+      "Podemos atuar em projetos específicos, mas nosso modelo é especialmente forte para empresas que buscam uma central tech parceira, capaz de diagnosticar, construir e evoluir soluções continuamente.",
   },
   {
-    question: "What is the value of the KX token?",
+    question: "O que diferencia a QueroCode de outras empresas de tecnologia?",
     answer:
-      "Each engagement is scoped individually. Get in touch and we'll walk you through pricing.",
+      "Unimos excelência técnica, visão de negócio e execução prática. Nossa equipe tem base em engenharia pela Poli-USP, experiência em produtos digitais e reconhecimento internacional por uma solução acelerada na Suíça pela START Global.",
+  },
+  {
+    question: "Vocês também cuidam de design e experiência do usuário?",
+    answer:
+      "Sim. Além do desenvolvimento técnico, também atuamos com produto digital, UX/UI, prototipação, MVPs e jornada do usuário, para criar soluções que não apenas funcionem, mas sejam realmente usadas.",
+  },
+  {
+    question: "Vocês integram sistemas como CRM, ERP e ferramentas internas?",
+    answer:
+      "Sim. Desenvolvemos integrações entre sistemas, APIs, CRMs, ERPs, bancos de dados e ferramentas internas para reduzir retrabalho, automatizar processos e melhorar o fluxo de informações da empresa.",
+  },
+  {
+    question: "Vocês trabalham com dados e dashboards?",
+    answer:
+      "Sim. Organizamos dados, criamos dashboards gerenciais, relatórios automatizados, indicadores e análises para ajudar empresas a tomarem decisões mais rápidas e confiáveis.",
+  },
+  {
+    question: "Como sei se minha empresa precisa de uma solução sob medida?",
+    answer:
+      "Se sua empresa depende de planilhas manuais, sistemas desconectados, processos repetitivos, relatórios difíceis de montar ou decisões baseadas em dados dispersos, provavelmente existe espaço para uma solução sob medida gerar impacto.",
+  },
+  {
+    question: "Qual é o primeiro passo para trabalhar com a QueroCode?",
+    answer:
+      "O primeiro passo é uma conversa inicial para entender os desafios da empresa, mapear oportunidades de software, IA e automação, e avaliar quais soluções fazem mais sentido para o momento atual do negócio.",
   },
 ];
 
@@ -60,7 +86,7 @@ const faqFade = {
 } as const;
 
 export function Faq() {
-  const [activeIndex, setActiveIndex] = useState<number | null>(1);
+  const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
   return (
     <section className="faq-section" id="faq">

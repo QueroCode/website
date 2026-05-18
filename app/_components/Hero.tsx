@@ -15,6 +15,8 @@ function ArrowIcon() {
   );
 }
 
+const meetingUrl = "https://meetings.hubspot.com/quero-code";
+
 function PagesIllustration() {
   return (
     <Image
@@ -73,7 +75,12 @@ export function Hero() {
           <br />
           sua <em>empresa.</em>
         </h1>
-        <a href="#contato" className="hero-button hero-button-main">
+        <a
+          href={meetingUrl}
+          className="hero-button hero-button-main"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <span>Marcar Reunião</span>
           <ArrowIcon />
         </a>
